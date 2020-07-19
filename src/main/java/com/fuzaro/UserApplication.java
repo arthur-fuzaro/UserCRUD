@@ -1,0 +1,23 @@
+package com.fuzaro;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
+
+@SpringBootApplication
+@Configuration
+public class UserApplication {
+
+    @Autowired
+    private DataSource dataSource;
+
+    public static void main(String[] args) {
+        SpringApplication.run(UserApplication.class, args);
+    }
+
+
+
+}
